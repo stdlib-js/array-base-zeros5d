@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-zeros5d/tags). For example,
+
+```javascript
 import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@v0.2.3-deno/mod.js';
 ```
 
@@ -85,7 +90,7 @@ var out = zeros5d( [ 1, 1, 1, 2, 3 ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@v0.2.3-deno/mod.js';
+import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@deno/mod.js';
 
 var out = zeros5d( [ 1, 1, 1, 1, 3 ] );
 // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
