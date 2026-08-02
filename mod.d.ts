@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,25 +16,30 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Shape5D } from '@stdlib/types/ndarray';
 
 /**
-* Create a zero-filled five-dimensional nested array.
+* Five-dimensional nested array.
+*/
+type Array5D<T> = Array<Array<Array<Array<Array<T>>>>>;
+
+/**
+* Returns a zero-filled five-dimensional nested array.
 *
-* @module @stdlib/array-base-zeros5d
+* @param shape - array shape
+* @returns output array
 *
 * @example
-* var zeros5d = require( '@stdlib/array-base-zeros5d' );
-*
 * var out = zeros5d( [ 1, 1, 1, 1, 3 ] );
 * // returns [ [ [ [ [ 0.0, 0.0, 0.0 ] ] ] ] ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function zeros5d( shape: Shape5D ): Array5D<number>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = zeros5d;
